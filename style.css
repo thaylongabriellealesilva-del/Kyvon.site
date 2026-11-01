@@ -296,7 +296,7 @@ main { padding-top: var(--header-h); }
 /* ---------- Telas maiores ---------- */
 @media (min-width: 640px) {
   .beneficios { grid-template-columns: repeat(2, 1fr); }
-  .servicos { grid-template-columns: repeat(3, 1fr); }
+  .servicos { grid-template-columns: repeat(2, 1fr); }
   .servico--destaque { grid-column: 1 / -1; }
   .planos { grid-template-columns: repeat(2, 1fr); }
   .passos { grid-template-columns: repeat(3, 1fr); gap: 2rem; }
