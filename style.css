@@ -232,6 +232,23 @@ main { padding-top: var(--header-h); }
 .plano li.mais::before { content: "+"; border: 0; transform: none; width: auto; height: auto; top: -0.05em; color: var(--azul); font-weight: 800; }
 .planos__nota { margin-top: 2rem; color: var(--cinza); font-size: 0.95rem; }
 
+/* Marketing digital */
+.marketing {
+  display: grid; gap: 2rem; align-items: center; max-width: 880px; margin-top: 4.5rem;
+  padding: 2.2rem 1.8rem; border-radius: 20px; border: 1px solid var(--borda);
+  background: linear-gradient(160deg, rgba(0, 102, 255, 0.14), rgba(0, 102, 255, 0) 55%), var(--superficie);
+}
+.marketing h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
+.marketing > div:first-child > p:not(.rotulo), .marketing__nota { color: var(--cinza); }
+.marketing .checklist { margin-bottom: 0; }
+.marketing__valor {
+  text-align: center; padding: 1.8rem 1.4rem; border-radius: var(--raio);
+  border: 1.5px solid var(--azul); background: var(--preto); box-shadow: 0 0 40px rgba(0, 102, 255, 0.22);
+}
+.marketing__de { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: var(--azul-claro); margin: 0; }
+.marketing__preco { font-size: 1.5rem; font-weight: 700; color: var(--branco); line-height: 1.25; margin: 0.8rem 0 0.6rem; }
+.marketing__nota { font-size: 0.85rem; margin: 0 0 1.4rem; }
+
 /* Como funciona */
 .passos { list-style: none; padding: 0; margin: 0; display: grid; gap: 1.5rem; }
 .passos li { border-top: 1px solid var(--borda); padding-top: 1.3rem; }
@@ -329,6 +346,7 @@ main { padding-top: var(--header-h); }
   .secao { padding: 6.5rem 0; }
   .beneficios { grid-template-columns: repeat(4, 1fr); }
   .exemplo { grid-template-columns: 1fr 1.1fr; gap: 4rem; }
+  .marketing { grid-template-columns: 1.25fr 1fr; gap: 2.5rem; padding: 2.6rem; }
   .sobre { grid-template-columns: 300px 1fr; gap: 4.5rem; }
   .rodape__inner { flex-direction: row; justify-content: space-between; }
 }
