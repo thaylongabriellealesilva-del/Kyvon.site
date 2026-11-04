@@ -232,6 +232,20 @@ main { padding-top: var(--header-h); }
 .plano li.mais::before { content: "+"; border: 0; transform: none; width: auto; height: auto; top: -0.05em; color: var(--azul); font-weight: 800; }
 .planos__nota { margin-top: 2rem; color: var(--cinza); font-size: 0.95rem; }
 
+/* Site sem mensalidade */
+.plano-unico {
+  display: grid; gap: 1.5rem; align-items: center; max-width: 880px; margin-top: 1.5rem;
+  padding: 1.8rem; border-radius: 20px; border: 1px solid var(--borda); background: var(--superficie);
+}
+.plano-unico h3 { font-size: 1.35rem; margin: 0.5rem 0; }
+.plano-unico p:not(.rotulo):not(.plano__preco) { color: var(--cinza); margin: 0; }
+.plano-unico .checklist { display: flex; flex-wrap: wrap; gap: 0 1.6rem; margin: 1rem 0 0; }
+.plano-unico .checklist li { margin: 0; }
+.plano-unico .plano-unico__nota { font-size: 0.82rem; margin-top: 0.8rem; }
+.plano-unico__valor { text-align: center; }
+.plano-unico__valor .plano__preco { margin: 0; }
+.plano-unico .plano-unico__obs { font-size: 0.85rem; margin: 0.4rem 0 1.2rem; }
+
 /* Marketing digital */
 .marketing {
   display: grid; gap: 2rem; align-items: center; max-width: 880px; margin-top: 4.5rem;
@@ -347,6 +361,7 @@ main { padding-top: var(--header-h); }
   .beneficios { grid-template-columns: repeat(4, 1fr); }
   .exemplo { grid-template-columns: 1fr 1.1fr; gap: 4rem; }
   .marketing { grid-template-columns: 1.25fr 1fr; gap: 2.5rem; padding: 2.6rem; }
+  .plano-unico { grid-template-columns: 1.4fr 1fr; gap: 2.5rem; padding: 2rem 2.4rem; }
   .sobre { grid-template-columns: 300px 1fr; gap: 4.5rem; }
   .rodape__inner { flex-direction: row; justify-content: space-between; }
 }
